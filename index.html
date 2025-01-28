@@ -1,0 +1,208 @@
+<!doctype html>
+<html lang="en">
+    <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <title>Bootstrap 5</title>
+      <!-- Bootstrap CSS -->
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+      <!-- Bootstrap JS -->
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+      <!-- Bootstrap Icons -->
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+      <!-- JavaScript to switch theme -->
+      <script src="switch.js"></script>
+
+    </head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-sm navbar-dark bg-primary py-1 sticky-top">
+        <div class="container">
+        <a href="" class="navbar-brand d-flex align-items-center">
+            <i class="bi-bootstrap-fill fs-1 me-2"></i>
+            Bootstrap 5</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuNavBar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="menuNavBar">
+                <div class="navbar-nav ms-auto">
+                    <a href="#" class="nav-link">Main</a>
+                    <a href="#" class="nav-link">Products</a>
+                    <a href="#" class="nav-link">Contact</a>
+                    <a href="#" class="nav-link">About</a>
+                </div>
+            </div>
+        </div>
+            <!-- Bootstrap 5 switch -->
+    <div class="form-check form-switch">
+        <input class="form-check-input" type="checkbox" id="darkModeSwitch" checked>
+        <label class="form-check-label" for="darkModeSwitch">Dark Mode</label>
+    </div>
+
+    </nav>
+
+    <noscript>
+        <div class="alert alert-danger" role="alert">
+        JavaScript is disabled.
+        </div>
+    </noscript>
+
+    <hr>
+
+    <!-- Container Bootstrap -->
+    <div class="container text-center">
+        <h1>Based on the Bootstrap 5 Course</h1>
+        <a href="https://www.youtube.com/@maroquio" target="_blank" rel="noopener noreferrer">
+            <p>by Professor <strong>Ricardo Maroquio</strong> on Youtube Channel</p>
+        </a>
+    </div>
+
+    <hr>
+
+    <!-- Container Bootstrap -->
+    <div class="container text-center">
+        <div class="row">
+            <div class="col bg-warning">
+                <p>DIV P</p>
+            </div>
+            <div class="col bg-primary">
+                <p>DIV P</p>
+            </div>
+            <div class="col bg-danger">
+                <p>DIV P</p>
+            </div>
+            <div class="col bg-success">
+                <p>DIV P</p>
+            </div>
+        </div>
+    </div>
+
+    <hr>
+
+    <!-- Container Bootstrap -->
+    <div class="container text-center">
+        <div class="row justify-content-evenly border-black">
+          <div class="col bg-warning offset-1">DIV 1</div>
+          <div class="col bg-primary offset-1">DIV 2</div>
+          <div class="col bg-danger offset-1">DIV 3</div>
+          <div class="col bg-success offset-1">DIV 4</div>
+        </div>
+    </div>
+
+    <hr>
+
+    <!-- Container Bootstrap -->
+    <div class="container text-center">
+        <div class="row">
+            <div class="col-6 bg-warning mx-auto">DIV 1</div>
+        </div>
+    </div>
+
+    <hr>
+
+    <!-- Formulario Bootstrap -->
+    <div class="container p-5">
+        <h1>Login form #1</h1>
+    <form>
+        <div class="mb-3">
+          <label for="mail" class="form-label" >Email address</label>
+          <input type="email" class="form-control" id="mail" placeholder="Enter your email@domain" aria-describedby="mailHelp">
+          <div id="mailHelp" class="form-text">We'll never share your email with anyone else.</div>
+        </div>
+        <div class="mb-3">
+          <label for="pwd" class="form-label">Password</label>
+          <input type="password" class="form-control" id="pwd" placeholder="Enter your password" aria-describedby="pwdHelp">
+          <div id="pwdHelp" class="form-text">We'll never share your password with anyone else.</div>
+        </div>
+        <div class="mb-3 form-check">
+          <input type="checkbox" class="form-check-input" id="checkMe">
+          <label class="form-check-label" for="checkMe">Check me out</label>
+        </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+      </form>
+    </div>
+
+    <hr>
+
+    <div class="container p-5">
+        <div class="row mb-3 g-2">
+            <div class="col bg-warning">
+                <input type="text" class="form-control" placeholder="DIV 1">
+            </div>
+            <div class="col bg-primary">
+                <input type="text" class="form-control" placeholder="DIV 2">
+            </div>
+            <div class="col bg-danger">
+                <input type="text" class="form-control" placeholder="DIV 3">
+            </div>
+            <div class="col bg-success">
+                <input type="text" class="form-control" placeholder="DIV 4">
+            </div>
+        </div>
+        <hr>
+        <div class="row mb-3 g-2">
+            <label for="" class="col-form-label col-4 text-end">E-mail</label>
+            <div class="col-8">
+                <input type="email" name="" id="" class="form-control" placeholder="E-mail">
+            </div>
+        </div>
+        <hr>
+        <form action="">
+            <div class="row mb-3 g-2">
+                <div class="col-7">
+                    <label for="" class="form-label">Logradouro</label>
+                    <input type="text" name="" id="" class="form-control" placeholder="Logradouro">
+                </div>
+                <div class="col-2">
+                    <label for="" class="form-label">Número</label>
+                    <input type="text" name="" id="" class="form-control" placeholder="Número">
+                </div>
+                <div class="col-3">
+                    <label for="" class="form-label">Complemento</label>
+                    <input type="text" name="" id="" class="form-control" placeholder="Complemento">
+                </div>
+                <div class="col-6">
+                    <label for="" class="form-label">Bairro</label>
+                    <input type="text" name="" id="" class="form-control" placeholder="Bairro">
+                </div>
+                <div class="col-6">
+                    <label for="" class="form-label">Cidade</label>
+                    <input type="text" name="" id="" class="form-control" placeholder="Cidade">
+                </div>
+                <div class="col-6">
+                    <label for="" class="form-label">Estado</label>
+                    <input type="text" name="" id="" class="form-control" placeholder="Estado">
+                </div>
+                <div class="col-2">
+                    <label for="" class="form-label">CEP</label>
+                    <input type="text" name="" id="" class="form-control" placeholder="CEP">
+                </div>
+            </div>
+        </form>
+        
+
+
+
+
+
+
+    </div>
+
+    <hr>
+
+    <!-- Texto Bootstrap -->
+    <div class="container mt-3">
+        <h1>The famous lorem</h1>
+        <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque accusamus ad ipsum earum inventore est ab soluta possimus. Inventore atque cum dolore doloribus iusto recusandae dignissimos delectus aliquam sint odit eum reprehenderit repudiandae, similique minima rerum, eveniet ab cumque nemo explicabo sequi culpa facere. Neque, corporis impedit! Iusto reprehenderit repellendus provident? Molestiae eius aspernatur corrupti dolore magnam adipisci iste velit. Accusantium minus, veritatis deserunt, perspiciatis saepe qui repellat dolore non esse quisquam harum delectus voluptas sunt blanditiis. Asperiores praesentium fugit reprehenderit repellendus, quos atque magni doloremque, ut ipsum tenetur officiis. Aliquid fuga necessitatibus neque quisquam laudantium laborum ducimus voluptatum ratione!</p>
+    </div>
+
+    <hr>
+
+    <!-- Footer Bootstrap -->
+    <footer class="p-4 bg-success text-center">
+        All rights reserved
+    </footer>
+
+</body>
+</html>
